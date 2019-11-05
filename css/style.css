@@ -12,6 +12,7 @@ nav ul {
     flex-direction: row;
     justify-content: space-around;
     list-style-type: none;
+    margin: 20px;
 
 }
 
@@ -21,6 +22,10 @@ a{
 }
 
 h1{
+    text-align: center;
+}
+
+h2{
     text-align: center;
 }
 
@@ -36,8 +41,26 @@ div{
 img{
     height: 55%;
     width: 33%;
+    text-align: center;
 }
 
 h1 ul li{
     list-style-type: none;
+}
+
+#omschrijving{
+    width: 47%;
+    text-align: center;
+    color: black;
+
+}
+
+#mondriaan{
+    position: absolute;
+    left: 200px;
+}
+
+#Frankrijk{
+    position: absolute;
+    left: 800px;
 }
