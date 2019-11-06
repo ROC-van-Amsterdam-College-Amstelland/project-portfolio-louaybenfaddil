@@ -80,3 +80,16 @@ h1 ul li{
     left: 350px;
     position: absolute;
 }
+
+#klok{
+    position: absolute;
+    top: 0px;
+    left: 297px;
+}
+
+#datumklok{
+    position: absolute;
+    left: 318px;
+    top: 114px;
+
+}
