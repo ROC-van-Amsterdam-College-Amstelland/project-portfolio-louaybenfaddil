@@ -36,25 +36,40 @@
         </ul>
 
     </h1>
-    <button id="dislike" type="submit">Dislike</button>
-    <script type="text/javascript">
-        var color = ["#ee5253"]
-        var i = 0;
-        document.querySelector(button).addEventListner("click",
-            function()
-            i = 1 < color.length ? ++i : 0;
-        document.querySelector("body").style.background = color[i]
-    })
 
+
+    <title>blah</title>
+    <script language="javascript">
+        function addone(field) {
+            field.value = Number(field.value) + 1;
+        }
+
+        function subtractone(field) {
+            field.value = Number(field.value) - 1;
+        }
     </script>
-    <button id="like" type="submit">Like</button>
-    <div class="container">
-        <iframe id="klok"
-            src="http://free.timeanddate.com/clock/i70gd8ss/n16/szw110/szh110/hoc009/hbw0/hfc0ff/cf100/hnc0f9/hwc000/fan2/fas16/fac555/fdi60/mqcf0f/mqs4/mql2/mqw4/mqd78/mhcf90/mhs4/mhl3/mhw4/mhd78/mmv0/hhc990/hhs2/hmc990/hms2/hscf09"
-            frameborder="0" width="110" height="110"></iframe>
-        <iframe id="datumklok" src="http://free.timeanddate.com/clock/i70gdgo4/n16/ahl/ftb/tt0/tw0/tm3/ts1/tb4"
-            frameborder="0" width="73" height="36"></iframe>
-    </div>
-</body>
+    </head>
+
+    <body>
+
+        <form name="myform">
+            <!--input type="submit" onclick="this.disabled = true" value="Save" -->
+            <input id="counter" type="text" name="myfield" value="0" size="5" readonly="readonly"><br>
+            <input id="like" type="button" value="Like! " onclick="addone(myfield);" onclick="this.disabled = true">
+            <input id="dislike" type="button" value="Dislike!" onclick="subtractone(myfield);"><br>
+
+        </form>
+
+    </body>
+
+    <footer>
+        <div class="container">
+            <iframe id="klok"
+                src="http://free.timeanddate.com/clock/i70gd8ss/n16/szw110/szh110/hoc009/hbw0/hfc0ff/cf100/hnc0f9/hwc000/fan2/fas16/fac555/fdi60/mqcf0f/mqs4/mql2/mqw4/mqd78/mhcf90/mhs4/mhl3/mhw4/mhd78/mmv0/hhc990/hhs2/hmc990/hms2/hscf09"
+                frameborder="0" width="110" height="110"></iframe>
+            <iframe id="datumklok" src="http://free.timeanddate.com/clock/i70gdgo4/n16/ahl/ftb/tt0/tw0/tm3/ts1/tb4"
+                frameborder="0" width="73" height="36"></iframe>
+        </div>
+    </footer>
 
 </html>
